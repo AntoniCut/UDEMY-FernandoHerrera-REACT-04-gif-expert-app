@@ -34,6 +34,7 @@ export const getGifs = async (category) => {
         //console.log("gifs => ", gifs, "\n\n\n");
 
         return gifs;
+        //return [1, 2, 3, 4]
 
     } catch (error) {
         //  -----  Captura cualquier error, incluyendo los del límite de tasa  -----
