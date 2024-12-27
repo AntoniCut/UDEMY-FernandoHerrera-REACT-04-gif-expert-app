@@ -23,9 +23,11 @@ export const AddCategory = ({ onNewCategory }) => {
 
     const onSubmit = (e) => {
 
+        console.log('Hola Mundo desde onSubmit');
         e.preventDefault();
 
         if (inputValue.trim().length <= 1) return;                                 
+        
         onNewCategory(inputValue.trim());
         setInputValue('');                                              
     }
@@ -33,7 +35,11 @@ export const AddCategory = ({ onNewCategory }) => {
     return (
 
         <form
-            onSubmit={onSubmit}>
+            onSubmit={onSubmit}
+            
+            //  -----  para que react testing library lo identifique  -----
+            aria-label="form"       
+        >   
 
             <input
                 type="text"

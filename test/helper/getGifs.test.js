@@ -3,8 +3,6 @@
 //  ******************************************************************
 
 import { describe, test, expect } from "@jest/globals";
-import { render, screen } from "@testing-library/react";
-import { GifItem } from "../../src/components/GifItem";
 import { getGifs } from "../../src/helper/getGifs";
 
 
@@ -23,12 +21,8 @@ describe('Pruebas en getGifs()', () => {
             title: expect.any(String),
             url: expect.any(String)
         })
-
-        
+       
     });
-
-   
-
 });
 
 

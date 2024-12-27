@@ -3,7 +3,7 @@
 //  *****************************************************************
 
 
-import reactLogo from '../assets/react.svg';
+//import reactLogo from '../assets/react.svg';
 
 
 //  ------------------------------
@@ -15,9 +15,9 @@ export const Header = () => {
 
         <header className="header">
 
-            <img src={reactLogo} className="logo react" alt="React logo" />
+            {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
             <h1> GifExpertApp </h1>
-            <img src={reactLogo} className="logo react" alt="React logo" />
+            {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
 
         </header>
     )
